@@ -74,7 +74,7 @@ class Bot:
                 time.sleep(1.5)
                 n_li_2 = len(self.driver.find_elements_by_class_name("FPmhX"))
                 if(n_li_1 != n_li_2):
-                    following = self.driver.find_elements_by_xpath("//*[contains(text(), 'Following')]")
+                    following = self.driver.find_elements_by_xpath("//*[contains(@Class, 'd7ByH')]")
                     for follow in following:
                         el = follow.find_element_by_xpath('../..')
                         el = el.find_element_by_tag_name('a')
